@@ -1,9 +1,9 @@
     version: '2'
     services:
       kcptun:
-        image: kcptun:v4
+          image: kcptun:latest
         ports:
           - "9527:9527"
         environment:
-          - SERVER_ADD=107.170.204.159:8388
+          - SERVER_ADD=*.*.*.*:8388
         restart: always
