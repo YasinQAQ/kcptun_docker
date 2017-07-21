@@ -1,7 +1,7 @@
     version: '2'
     services:
       kcptun:
-          image: kcptun:latest
+          image: kcptun_docker:arm
         ports:
           - "9527:9527"
         environment:
