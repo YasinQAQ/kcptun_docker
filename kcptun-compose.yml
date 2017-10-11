@@ -1,9 +1,10 @@
     version: '2'
     services:
       kcptun:
-          image: kcptun:latest
+        image: moclaF/kcptun_docker:latest
         ports:
-          - "9527:9527"
+          - "3389:3389"
         environment:
-          - SERVER_ADD=*.*.*.*:8388
+          - SERVER_ADD=*.*.*.*:4396
+          - KCP_PORT=3389
         restart: always
