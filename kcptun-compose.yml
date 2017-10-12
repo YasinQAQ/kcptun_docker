@@ -1,9 +1,10 @@
     version: '2'
     services:
       kcptun:
-          image: kcptun_docker:arm
+        image: moclaf/kcptun_docker:arm
         ports:
           - "9527:9527"
         environment:
           - SERVER_ADD=*.*.*.*:8388
+          _ KCP_PORT=9527
         restart: always
